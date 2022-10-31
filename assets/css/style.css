@@ -1,0 +1,125 @@
+/* ==========================
+        Global
+========================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  background-color: #fff;
+}
+
+body {
+  width: 50rem;
+  margin: 10rem auto;
+  background-image: linear-gradient(#AAC0D9, #768597);
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+  /* ==========================
+          Header
+  ========================== */
+  /* ==========================
+          Main
+  ========================== */
+}
+body .headline {
+  color: #324860;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+body header {
+  padding: 2rem;
+  color: #324860;
+  font-size: 2rem;
+  text-align: center;
+}
+body main section:nth-of-type(1) form {
+  display: flex;
+  flex-direction: column;
+}
+body main section:nth-of-type(1) form fieldset {
+  border: none;
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body main section:nth-of-type(1) form fieldset input,
+body main section:nth-of-type(1) form fieldset label {
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+body main section:nth-of-type(1) form fieldset input {
+  background-color: #C5D3E2;
+  border: none;
+  padding: 0.5rem;
+}
+body main section:nth-of-type(1) form fieldset input[type=number] {
+  width: 90%;
+}
+body main section:nth-of-type(1) form fieldset input[type=radio] {
+  margin-right: 1rem;
+}
+body main section:nth-of-type(1) form fieldset select {
+  width: 90%;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  border-radius: 0.6rem;
+  color: #768597;
+  background-color: #C5D3E2;
+  padding: 0.5rem;
+}
+body main section:nth-of-type(1) form button,
+body main section:nth-of-type(1) form input[type=reset] {
+  padding: 0.5rem 1rem;
+  background-color: #965F1A;
+  color: white;
+  border: 0.5px solid black;
+  border-radius: 0.3rem;
+  align-self: flex-end;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+body main section:nth-of-type(1) form p {
+  margin: 2rem 3rem 1rem 3rem;
+  font-size: 2rem;
+  color: crimson;
+  font-weight: bold;
+}
+body main section:nth-of-type(2) table {
+  width: 90%;
+  margin: 2rem auto;
+}
+body main section:nth-of-type(2) table th {
+  font-size: 1.8rem;
+  color: white;
+  background-image: linear-gradient(#4B8CB6, #1F70A6);
+  text-align: start;
+  padding: 1rem 0.5rem;
+}
+body main section:nth-of-type(2) table th:nth-of-type(2), body main section:nth-of-type(2) table th:nth-of-type(3) {
+  border-left: 1px solid white;
+}
+body main section:nth-of-type(2) table td {
+  background-color: #EEEEEE;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding-left: 0.5rem;
+}
+body main section:nth-of-type(2) table td:nth-of-type(1) {
+  width: 50%;
+}
+body main section:nth-of-type(2) table td:nth-of-type(2), body main section:nth-of-type(2) table td:nth-of-type(3) {
+  width: 25%;
+}
+body main section:nth-of-type(3) {
+  padding: 3rem;
+  font-size: 1.4rem;
+}
+
+/*# sourceMappingURL=style.css.map */

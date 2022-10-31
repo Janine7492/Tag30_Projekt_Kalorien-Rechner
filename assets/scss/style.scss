@@ -1,0 +1,153 @@
+/* ==========================
+        Global
+========================== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    background-color: #fff;
+}
+
+body {
+    width: 50rem;
+    margin: 10rem auto;
+    background-image: linear-gradient(#AAC0D9, #768597);
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+
+    .headline {
+        color: #324860;
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin: 1rem 0;
+    }
+
+    /* ==========================
+        Header
+========================== */
+
+    header {
+        padding: 2rem;
+        color: #324860;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* ==========================
+        Main
+========================== */
+
+    main {
+        section {
+            &:nth-of-type(1) {
+                form {
+                    display: flex;
+                    flex-direction: column;
+
+                    fieldset {
+                        border: none;
+                        margin: 1rem 2rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        input,
+                        label {
+                            line-height: 1.5;
+                            font-size: 1.6rem;
+                        }
+
+                        input {
+                            background-color: #C5D3E2;
+                            border: none;
+                            padding: 0.5rem;
+
+                            &[type="number"] {
+                                width: 90%;
+                            }
+
+                            &[type="radio"] {
+                                margin-right: 1rem;
+                            }
+                        }
+
+                        select {
+                            width: 90%;
+                            line-height: 1.5;
+                            font-size: 1.6rem;
+                            border-radius: 0.6rem;
+                            color: #768597;
+                            background-color: #C5D3E2;
+                            padding: 0.5rem;
+                        }
+                    }
+
+                    button,
+                    input[type="reset"] {
+                        padding: 0.5rem 1rem;
+                        background-color: #965F1A;
+                        color: white;
+                        border: 0.5px solid black;
+                        border-radius: 0.3rem;
+                        align-self: flex-end;
+                        margin-right: 3rem;
+                        margin-top: 2rem;
+                        font-size: 1.6rem;
+                    }
+
+                    p {
+                        margin: 2rem 3rem 1rem 3rem;
+                        font-size: 2rem;
+                        color: crimson;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+                table {
+                    width: 90%;
+                    margin: 2rem auto;
+
+                    th {
+                        font-size: 1.8rem;
+                        color: white;
+                        background-image: linear-gradient(#4B8CB6, #1F70A6);
+                        text-align: start;
+                        padding: 1rem 0.5rem;
+
+                        &:nth-of-type(2),
+                        &:nth-of-type(3) {
+                            border-left: 1px solid white;
+                        }
+                    }
+
+                    td {
+                        background-color: #EEEEEE;
+                        font-size: 1.6rem;
+                        line-height: 1.5;
+                        padding-left: 0.5rem;
+
+                        &:nth-of-type(1) {
+                            width: 50%;
+                        }
+
+                        &:nth-of-type(2),
+                        &:nth-of-type(3) {
+                            width: 25%;
+                        }
+                    }
+                }
+            }
+
+            &:nth-of-type(3) {
+                padding: 3rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
